@@ -33,61 +33,6 @@ function url($url = null){
 	}
 }
 
-// CRUD (Management Karyawan)
-function add_kary($karyawan){
-	global $koneksi;
-
-	$nama			= htmlspecialchars($karyawan['nama']);
-	$username	= htmlspecialchars($karyawan['username']);
-	$email		= htmlspecialchars($karyawan['email']);
-	$password	= stripcslashes(htmlspecialchars($karyawan['password']));
-	$level		= $karyawan['level'];
-
-	// Cek apakah username dan email sudah tersedia
-	$master = mysqli_query($koneksi,"SELECT * FROM master WHERE username='$username' OR email='$email'");
-	if (mysqli_num_rows($master) > 0) {
-		echo "
-			<script>
-				alert('Username atau Email Sudah Terdaftar')
-			</script>
-		";
-		return false;
-	}
-
-	$password = password_hash($password, PASSWORD_DEFAULT);
-	$insert = "INSERT INTO master VALUES ('','$nama','$email','$username','$password','$level')";
-	mysqli_query($koneksi,$insert);
-
-	return mysqli_affected_rows($koneksi);
-}
-
-function update_kary($up_kary){
-	global $koneksi;
-
-	$id_user 	= $up_kary['id_user'];
-	$nama 		= htmlspecialchars($up_kary['nama']);
-	$username 	= htmlspecialchars($up_kary['username']);
-	$email 		= htmlspecialchars($up_kary['email']);
-
-	$up_query = "UPDATE master SET 
-		nama 		= '$nama', 
-		username = '$username', 
-		email 	= '$email' 
-		WHERE id_user = '$id_user'
-	";
-
-	mysqli_query($koneksi,$up_query);
-	return mysqli_affected_rows($koneksi);
-}
-
-function del_kary($id_kary){
-	global $koneksi;
-	mysqli_query($koneksi,"DELETE FROM master WHERE id_user = '$id_kary'");
-	return mysqli_affected_rows($koneksi);
-}
-
-
-
 // CRUD Paket Cuci Komplit
 function add_ck($data_ck){
 	global $koneksi;

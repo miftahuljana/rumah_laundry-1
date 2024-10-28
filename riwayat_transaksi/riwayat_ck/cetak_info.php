@@ -10,7 +10,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Invoice <?= $data['or_number'];?></title>
-   <link rel="shortcut icon" href="<?=url('_assets/img/logo/favicon.svg')?>" type="image/x-icon">
    <link rel="stylesheet" href="<?=url('_assets/css/invoice.css')?>">
 </head>
 <body>
@@ -18,7 +17,6 @@
          <div class="invoice-content">
             <div class="invoice-header">
                <div class="logo">
-                  <img src="<?=url('_assets/img/logo/logo.png')?>" width="145" alt="Logo rumah laundry">
                </div>
                <div class="invoice-no_order">
                   <span>Invoice number : <?=$data['or_number']?></span>

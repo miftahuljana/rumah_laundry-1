@@ -42,6 +42,30 @@
                                  <h4>Cuci Satuan</h4>
                               </a>
                            </div>
+
+                           <div class="container-paket">
+                           <div class="col-paket">
+                              
+                                 <img src="<?=url('_assets/img/cuci_komplit.png')?>" alt="cuci komplit" width="160">
+                                 <h4>cucian tengah</h4>
+                              </a>
+                           </div>
+
+                           <div class="col-paket">
+                              
+                                 <img src="<?=url('_assets/img/dry_clean.png')?>" alt="dry clean" width="160">
+                                 <h4>cucian ringan</h4>
+                              </a>
+                           </div>
+
+                           <div class="col-paket">
+                              
+                                 <img src="<?=url('_assets/img/kemeja_2.png')?>" alt="cuci satuan" width="160">
+                                 <h4>cucian berat</h4>
+                              </a>
+                           </div>
+                           
+
                         </div>
                      </div>
                   </div>

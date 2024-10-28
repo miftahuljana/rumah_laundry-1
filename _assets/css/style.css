@@ -11,7 +11,6 @@ html,body{
 	font-family: 'Open sans', sans-serif;
 	display: flex;
 	flex-direction: column;
-	background-image: url(../img/blue-snow.png);
 	overflow-x: hidden;
 }
 
@@ -70,7 +69,7 @@ nav{
 	align-items: center;
 	width: 100%;
 	height: 60px;
-	background-color: #3a66c1;
+	background-color: #3264b5;
 }
 
 nav .logo{
@@ -86,10 +85,6 @@ nav .logo a{
 	font-weight: bold;
 	font-size: 20px;
    color: #eee;
-}
-
-nav .logo a img{
-   height: 38px;
 }
 
 nav .nav-menu{
@@ -707,16 +702,6 @@ footer > p{
 	color: #4b4b4b;
 }
 
-.paket img{
-	position: absolute;
-	top: 20px;
-	transition: all .2s;
-}
-
-.paket:hover img{
-	transform: translateY(-10px);
-}
-
 .paket h4{
 	position: absolute;
 	bottom: 50px;
@@ -1063,80 +1048,4 @@ span.ov_tgl{
 .desc-member p{
    font-weight: 700;
    color: #2d2d2d;
-}
-
-.desc-member .social-media{
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-top: 10px;
-}
-
-.desc-member .social-media img{
-	filter: grayscale(100%);
-	transition: all .4s ease-out;
-}
-
-.desc-member .social-media img:hover{
-	filter: grayscale(0);
-}
-
-.video-btn{
-	right: 15px;
-	top: 50vh;
-	position: fixed;
-	background-color: #4dbd4d;
-	z-index: 100;
-	border-radius: 30px;
-}
-
-.video-btn a{
-	padding: 10px 15px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: #fff;;
-}
-
-.video-btn a img{
-	width: 16px;
-	margin-right: 5px;
-}
-
-.video-btn a p{
-	font-size: 13px;
-}
-
-.konten-video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	width: 800px;
-	height: auto;
-	margin: auto;
-	box-shadow: 0 0 5px 5px rgba(0,0,0,0.05);
-}
-
-.konten-video video{
-	width: 100%;
-}
-
-.video-play a{
-	position: absolute;
-	border-radius: 50%;
-	top: 50px;
-	left: 50%;
-	transform: translateX(-50%);
-	padding: 15px;
-	font-size: 18px;
-	text-align: center;
-	text-decoration: none;
-	background: #5e5b5b;
-	border: 1px;
-	line-height: 10px;
-	color: white;
 }

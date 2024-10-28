@@ -18,7 +18,6 @@
 				<li>
 					<span id=""><?= ucfirst($_SESSION['master']) ?></span>
 					<ul class="dropdown-menu">
-						<li><a href="<?=url('about.php')?>">Tentang Kami</a></li>
 						<li><a href="<?=url('logout.php')?>">Logout</a></li>
 					</ul>
 				</li>
@@ -26,6 +25,5 @@
 		</nav>
 		<div id="nav-mini">
 			<a href="<?=url('riwayat_transaksi/riwayat.php')?>" class="link-nav">Riwayat Transaksi</a>
-			<a href="<?=url('paket/paket.php')?>" class="link-nav">Daftar Paket</a>
 		</div>
 	</header>
