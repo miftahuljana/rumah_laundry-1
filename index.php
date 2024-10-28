@@ -6,55 +6,164 @@
 	}
 ?>
 
-	<div id="main" class="main-content">
-		<div class="container">
-			<div class="baris">
-				<div class="selamat-datang">
-					<div class="col-header">
-						<p class="judul-sm">Selamat Datang <span><?= ucfirst($_SESSION['master']) ?></span></p>
-						<h2 class="judul-md">Dashboard</h2>
-					</div>
+<div id="main" class="main-content">
+    <div class="container">
+        <div class="baris">
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Total Order</p>
+                                <h2><?= jmlOrder(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Jumlah Paket Tersedia</p>
+                                <h2><?= jmlPaket(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>total order</p>
+                                <h2>Data 3</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>jumlah paket tersedia</p>
+                                <h2>Data 4</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-					<div class="col-header txt-right">
-						<a href="<?=url('order/order.php')?>" class="btn-lg bg-primary">+ Order Baru</a>
-					</div>	
-				</div>
-			</div>
+<div id="main" class="main-content">
+    <div class="container">
+        <div class="baris">
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Total Order</p>
+                                <h2><?= jmlOrder(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Box 4</p>
+                                <h2>Data 4</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
-			<div class="baris">
-				<div class="col col-4">
-					<div class="card">
-						<div class="card-body">
-							<div class="card-panel">
-								<div class="panel-header">
-								<p>Total Order</p>
-									<h2><?= jmlOrder(); ?></h2>
-								</div>
-								
-								<div class="panel-icon">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+<div id="main" class="main-content">
+    <div class="container">
+        <div class="baris">
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Total Order</p>
+                                <h2><?= jmlOrder(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>Jumlah Paket Tersedia</p>
+                                <h2><?= jmlPaket(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>total order</p>
+                                <h2>Data 3</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-panel">
+                            <div class="panel-header">
+                                <p>jumlah paket tersedia</p>
+                                <h2>Data 4</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-				<div class="col col-4">
-					<div class="card">
-						<div class="card-body">
-							<div class="card-panel">
-								<div class="panel-header">
-									<p>Jumlah Paket Tersedia</p>
-									<h2><?= jmlPaket(); ?></h2>
-								</div>
+<div class="center">
+    <div class="baris">
+        <div class="col col-1">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-panel">
+                        <div class="panel-header">
+                             <p>Total Order</p>
+                            <h2><?= jmlOrder(); ?></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-								<div class="panel-icon">
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
+
+
 
 			<!-- Daftar Order Cuci Komplit -->
 			<div class="baris">
